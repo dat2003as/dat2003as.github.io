@@ -1,0 +1,418 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vo Quoc Dat | AI Engineer</title>
+    <meta name="description" content="Portfolio of Vo Quoc Dat — AI Engineer specializing in Computer Vision, NLP, Edge AI, and Multi-Agent Systems.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <!-- Navigation -->
+    <nav class="nav" id="nav">
+        <div class="container nav__inner">
+            <a href="#hero" class="nav__logo">VQD<span>.</span></a>
+            <ul class="nav__links" id="navLinks">
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#experience">Experience</a></li>
+                <li><a href="#awards">Awards</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <button class="nav__toggle" id="navToggle" aria-label="Toggle menu">
+                <span></span><span></span><span></span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Hero -->
+    <section class="hero" id="hero">
+        <canvas class="hero__particles" id="particles"></canvas>
+        <div class="container hero__content">
+            <div class="hero__avatar">
+                <img src="images/avata.jpg" alt="Vo Quoc Dat">
+            </div>
+            <div class="hero__text">
+                <p class="hero__greeting">Hello, I'm</p>
+                <h1 class="hero__name"><span class="gradient-text">Vo Quoc Dat</span></h1>
+                <p class="hero__title">AI Engineer</p>
+                <p class="hero__tagline">Computer Vision · LLM & Multi-Agent Systems · Edge AI</p>
+                <p class="hero__bio">
+                    Aspiring AI Engineer passionate about deep learning, computer vision, and NLP.
+                    I build intelligent systems that run in production — from multi-agent RAG chatbots
+                    to real-time person re-identification on edge devices with NPU acceleration.
+                </p>
+                <div class="hero__info">
+                    <span><i class="fas fa-graduation-cap"></i> B.IT — NTTU · GPA 3.47/4.0</span>
+                    <span><i class="fas fa-map-marker-alt"></i> Ho Chi Minh City, Vietnam</span>
+                </div>
+                <div class="hero__actions">
+                    <a href="#projects" class="btn btn--primary">View Projects</a>
+                    <a href="CV_VoQuocDat.pdf" class="btn btn--outline" target="_blank">
+                        <i class="fas fa-download"></i> Download CV
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills -->
+    <section class="section section--alt" id="skills">
+        <div class="container">
+            <h2 class="section__title">Skills & Technologies</h2>
+            <div class="skills-grid">
+                <div class="skill-card">
+                    <div class="skill-card__icon"><i class="fas fa-code"></i></div>
+                    <h3>Programming</h3>
+                    <div class="skill-card__tags">
+                        <span class="tag">Python</span>
+                        <span class="tag">JavaScript</span>
+                    </div>
+                </div>
+                <div class="skill-card">
+                    <div class="skill-card__icon"><i class="fas fa-brain"></i></div>
+                    <h3>AI / ML</h3>
+                    <div class="skill-card__tags">
+                        <span class="tag">PyTorch</span>
+                        <span class="tag">TensorFlow</span>
+                        <span class="tag">YOLO</span>
+                        <span class="tag">OpenCV</span>
+                        <span class="tag">Scikit-learn</span>
+                    </div>
+                </div>
+                <div class="skill-card">
+                    <div class="skill-card__icon"><i class="fas fa-comments"></i></div>
+                    <h3>NLP / LLM</h3>
+                    <div class="skill-card__tags">
+                        <span class="tag">LangChain</span>
+                        <span class="tag">Hugging Face</span>
+                        <span class="tag">RAG Architecture</span>
+                        <span class="tag">Vanna (Text-to-SQL)</span>
+                    </div>
+                </div>
+                <div class="skill-card">
+                    <div class="skill-card__icon"><i class="fas fa-server"></i></div>
+                    <h3>Backend & Tools</h3>
+                    <div class="skill-card__tags">
+                        <span class="tag">FastAPI</span>
+                        <span class="tag">Streamlit</span>
+                        <span class="tag">Docker</span>
+                        <span class="tag">Git</span>
+                        <span class="tag">Linux</span>
+                    </div>
+                </div>
+                <div class="skill-card">
+                    <div class="skill-card__icon"><i class="fas fa-database"></i></div>
+                    <h3>Cloud & Database</h3>
+                    <div class="skill-card__tags">
+                        <span class="tag">AWS</span>
+                        <span class="tag">PostgreSQL</span>
+                        <span class="tag">MongoDB</span>
+                        <span class="tag">Pinecone</span>
+                        <span class="tag">ChromaDB</span>
+                        <span class="tag">Faiss</span>
+                        <span class="tag">Qdrant</span>
+                    </div>
+                </div>
+                <div class="skill-card">
+                    <div class="skill-card__icon"><i class="fas fa-microchip"></i></div>
+                    <h3>Edge AI</h3>
+                    <div class="skill-card__tags">
+                        <span class="tag">Orange Pi NPU</span>
+                        <span class="tag">ONNX</span>
+                        <span class="tag">CIX Model Format</span>
+                        <span class="tag">ZMQ Streaming</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience -->
+    <section class="section" id="experience">
+        <div class="container">
+            <h2 class="section__title">Experience</h2>
+            <div class="timeline">
+                <div class="timeline__item">
+                    <div class="timeline__dot"></div>
+                    <div class="timeline__content">
+                        <span class="timeline__date">Nov 2025 — Present</span>
+                        <h3>AI Team Lead</h3>
+                        <p class="timeline__company">Mebisoft · Ho Chi Minh City</p>
+                        <ul>
+                            <li>Spearheaded server-side aquaculture vision pipeline, migrating from YOLO to Apache 2.0 / license-free architectures (RTMDet, PPYOLOE-R, YOLOX) for commercial deployment</li>
+                            <li>Engineered high-density counting module (1024×1024 input) with fixed-aspect ratio cropping — 90% accuracy (sparse), 80%+ (highly overlapped)</li>
+                            <li>Built production-ready measurement system fusing RTMDet-Seg with ArUco-based skeletal geometry — &lt;10% error against physical benchmarks</li>
+                            <li>Engineered TensorRT compilation pipeline for counting, achieving &gt;120 FPS on RTX 3050 Ti prior to Jetson Nano deployment</li>
+                            <li>Developed PoC anomaly detection pipeline using segmentation + EfficientNet-B0 with CBAM attention — 94% accuracy on test sets</li>
+                            <li>Spearheaded enterprise RAG chatbot (Mebieco) deployment with Vanna, pgvector, JWT security, and SQL guardrails across 60+ PostgreSQL tables</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="timeline__item">
+                    <div class="timeline__dot"></div>
+                    <div class="timeline__content">
+                        <span class="timeline__date">May 2025 — Oct 2025</span>
+                        <h3>Edge AI Engineer</h3>
+                        <p class="timeline__company">Be-Earning · Ho Chi Minh City</p>
+                        <ul>
+                            <li>Accelerated inference throughput by 3× vs. CPU baseline by engineering a custom ONNX-to-.cix model compilation pipeline targeting the 45 TOPS CIX CD8180 NPU</li>
+                            <li>Engineered a low-latency video ingestion pipeline via GStreamer and adaptive frame skipping, reducing input lag to &lt;50ms with smooth tracking at 5–7 FPS on embedded constraints</li>
+                            <li>Optimized multi-task biometric models (PyTorch Lightning) using MixUp and class-weighting, securing &gt;85% validation accuracy under strict edge memory constraints</li>
+                            <li>Implemented Adaptive Recognition Logic fusing CCCD, Face ID, and Body Re-ID vectors via multi-index FAISS retrieval, achieving &lt;1.5s latency for billion-scale database matches</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Awards -->
+    <section class="section section--alt" id="awards">
+        <div class="container">
+            <h2 class="section__title">Awards</h2>
+            <div class="awards">
+                <div class="awards__photo">
+                    <img src="images/giaiThuong.png" alt="Competition Trophies" class="project__img">
+                </div>
+                <div class="awards__list">
+                    <div class="award-card">
+                        <span class="award-card__badge award-card__badge--silver"><i class="fas fa-medal"></i> Runner-up</span>
+                        <h3>Enterprise RAG Microservices System</h3>
+                        <p class="award-card__event">NTTU AI Competition 2025</p>
+                        <p>Designed a scalable RAG microservices architecture handling concurrent requests via Kafka and Docker Compose; integrated Llama 3.2 and Qdrant Vector DB.</p>
+                    </div>
+                    <div class="award-card">
+                        <span class="award-card__badge award-card__badge--bronze"><i class="fas fa-award"></i> Innovation Award</span>
+                        <h3>Ultra-Low Latency Gesture Control</h3>
+                        <p class="award-card__event">NTTU AI Competition 2024</p>
+                        <p>Built a real-time HCI system (&lt;50ms latency) by optimizing serial communication between a Python CV pipeline and Arduino microcontrollers.</p>
+                    </div>
+                    <div class="award-card">
+                        <span class="award-card__badge award-card__badge--bronze"><i class="fas fa-award"></i> Encouragement Award</span>
+                        <h3>Student Management Mobile App</h3>
+                        <p class="award-card__event">Software Engineering Competition</p>
+                        <p>Developed a mobile application for student management with streamlined tracking and administration features.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects -->
+    <section class="section section--alt" id="projects">
+        <div class="container">
+            <h2 class="section__title">Featured Projects</h2>
+
+            <!-- Project 1: Edge AI Person ReID -->
+            <div class="project">
+                <div class="project__media">
+                    <div class="project__featured-media">
+                        <video controls muted preload="metadata" poster="">
+                            <source src="video/video2.mp4" type="video/mp4">
+                        </video>
+                    </div>
+                    <div class="project__gallery">
+                        <div class="project__thumb project__thumb--active" data-type="video" data-src="video/video2.mp4">
+                            <i class="fas fa-play"></i> Demo 1
+                        </div>
+                        <div class="project__thumb" data-type="video" data-src="video/video3.mp4">
+                            <i class="fas fa-play"></i> Demo 2
+                        </div>
+                    </div>
+                </div>
+                <div class="project__info">
+                    <div class="project__header">
+                        <h3>Edge AI Person Monitoring & Re-ID</h3>
+                        <a href="https://github.com/dat2003as/Edge-AI-Person-ReID-NPU" class="btn btn--sm" target="_blank" rel="noopener">
+                            <i class="fab fa-github"></i> GitHub
+                        </a>
+                    </div>
+                    <p class="project__badge">Team Project</p>
+                    <p>
+                        Real-time person detection, tracking, and re-identification system designed for edge devices.
+                        Achieves 3–4× performance improvement via NPU acceleration on Orange Pi hardware.
+                        Combines dual-vector matching (body + face embeddings) with CCCD/ID card recognition.
+                    </p>
+                    <div class="project__highlights">
+                        <h4>Key Achievements</h4>
+                        <ul>
+                            <li><strong>95%+</strong> Re-ID accuracy in controlled environments</li>
+                            <li><strong>98%+</strong> Face match accuracy with quality gating</li>
+                            <li><strong>5–7 FPS</strong> real-time tracking on Orange Pi NPU</li>
+                            <li>4-stage tracking lifecycle: pending → tentative → identified → confirmed</li>
+                            <li>3-worker async architecture for parallel processing</li>
+                        </ul>
+                    </div>
+                    <div class="project__stack">
+                        <span class="tag tag--tech">YOLO11</span>
+                        <span class="tag tag--tech">OSNet</span>
+                        <span class="tag tag--tech">BoT-SORT</span>
+                        <span class="tag tag--tech">MobileFaceNet</span>
+                        <span class="tag tag--tech">PaddleOCR</span>
+                        <span class="tag tag--tech">Faiss</span>
+                        <span class="tag tag--tech">FastAPI</span>
+                        <span class="tag tag--tech">Orange Pi NPU</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Project 2: Mebieco AI Chatbot -->
+            <div class="project project--reverse">
+                <div class="project__media">
+                    <div class="project__featured-media">
+                        <img src="images/FullDiagram.png" alt="Mebieco AI Chatbot System Architecture" class="project__img">
+                    </div>
+                    <div class="project__gallery">
+                        <div class="project__thumb project__thumb--active" data-type="image" data-src="images/FullDiagram.png">Architecture</div>
+                        <div class="project__thumb" data-type="image" data-src="images/Role-Based Access Control — Mebieco AI Chatbot.png">RBAC</div>
+                        <div class="project__thumb" data-type="image" data-src="images/3dlow.png">Knowledge Graph</div>
+                        <div class="project__thumb" data-type="image" data-src="images/debug_dashboard_GiaTom_ThoiTiet.png">Dashboard</div>
+                    </div>
+                </div>
+                <div class="project__info">
+                    <div class="project__header">
+                        <h3>Mebieco — AI Chatbot for Enterprise</h3>
+                        <a href="https://github.com/dat2003as/mebieco-ai-chatbot" class="btn btn--sm" target="_blank" rel="noopener">
+                            <i class="fab fa-github"></i> GitHub
+                        </a>
+                    </div>
+                    <p class="project__badge">Team Project · Mebisoft AI</p>
+                    <p>
+                        Multi-agent AI chatbot for high-tech shrimp farming operations.
+                        Combines RAG document retrieval with Text-to-SQL structured data queries,
+                        routing user requests through an LLM orchestrator that selects among four specialized tools.
+                    </p>
+                    <div class="project__highlights">
+                        <h4>Key Features</h4>
+                        <ul>
+                            <li>Hybrid RAG search: vector cosine + BM25 merged via Reciprocal Rank Fusion</li>
+                            <li>Text-to-SQL via Vanna across 4 farm data domains</li>
+                            <li>RBAC with farm isolation and SELECT-only SQL guardrails</li>
+                            <li>Real-time shrimp prices and weather forecast integration</li>
+                            <li>Streamlit debug dashboard for real-time query analysis</li>
+                        </ul>
+                    </div>
+                    <div class="project__stack">
+                        <span class="tag tag--tech">LangChain</span>
+                        <span class="tag tag--tech">FastAPI</span>
+                        <span class="tag tag--tech">PostgreSQL + pgvector</span>
+                        <span class="tag tag--tech">Redis</span>
+                        <span class="tag tag--tech">Vanna</span>
+                        <span class="tag tag--tech">Streamlit</span>
+                        <span class="tag tag--tech">Azure OpenAI</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Project 3: MekongAI Shrimp Health -->
+            <div class="project">
+                <div class="project__media">
+                    <div class="project__featured-media">
+                        <img src="images/CounTom.jpg" alt="AI Shrimp Counting" class="project__img">
+                    </div>
+                    <div class="project__gallery">
+                        <div class="project__thumb project__thumb--active" data-type="image" data-src="images/CounTom.jpg">Counting</div>
+                        <div class="project__thumb" data-type="image" data-src="images/DoKichThuocTom.jpg">Sizing</div>
+                        <div class="project__thumb" data-type="image" data-src="images/ChanDoanTom.jpg">Diagnosis</div>
+                    </div>
+                </div>
+                <div class="project__info">
+                    <div class="project__header">
+                        <h3>AI Shrimp Analysis System</h3>
+                    </div>
+                    <p class="project__badge">Team Project · Mebisoft AI</p>
+                    <p>
+                        Integrated mobile AI system for shrimp farming — combining three core modules
+                        in a single platform: disease diagnosis, automated counting, and size measurement.
+                        Farmers capture or upload photos to get instant AI-powered analysis results.
+                    </p>
+                    <div class="project__highlights">
+                        <h4>Key Achievements</h4>
+                        <ul>
+                            <li><strong>Counting:</strong> YOLOv8 detection — <strong>92%</strong> accuracy</li>
+                            <li><strong>Sizing:</strong> YOLOv8 Segmentation + morphological analysis</li>
+                            <li><strong>Diagnosis:</strong> YOLOv8-Seg (reused from sizing) + EfficientNet-B0 — <strong>90%+</strong> accuracy</li>
+                        </ul>
+                    </div>
+                    <div class="project__stack">
+                        <span class="tag tag--tech">YOLOv8</span>
+                        <span class="tag tag--tech">YOLOv8-Seg</span>
+                        <span class="tag tag--tech">EfficientNet-B0</span>
+                        <span class="tag tag--tech">OpenCV</span>
+                        <span class="tag tag--tech">FastAPI</span>
+                        <span class="tag tag--tech">Python</span>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Contact -->
+    <section class="section" id="contact">
+        <div class="container">
+            <h2 class="section__title">Get In Touch</h2>
+            <p class="section__subtitle">I'm open to AI engineering opportunities and collaborations.</p>
+            <div class="contact-grid">
+                <a href="mailto:dat614943@gmail.com" class="contact-card">
+                    <i class="fas fa-envelope"></i>
+                    <h3>Email</h3>
+                    <p>dat614943@gmail.com</p>
+                </a>
+                <a href="tel:+84935019948" class="contact-card">
+                    <i class="fas fa-phone"></i>
+                    <h3>Phone</h3>
+                    <p>0935 019 948</p>
+                </a>
+                <a href="https://www.linkedin.com/in/dat614943/" class="contact-card" target="_blank" rel="noopener">
+                    <i class="fab fa-linkedin"></i>
+                    <h3>LinkedIn</h3>
+                    <p>Vo Quoc Dat</p>
+                </a>
+                <a href="https://github.com/dat2003as" class="contact-card" target="_blank" rel="noopener">
+                    <i class="fab fa-github"></i>
+                    <h3>GitHub</h3>
+                    <p>dat2003as</p>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container footer__inner">
+            <p>&copy; 2025 Vo Quoc Dat. All rights reserved.</p>
+            <div class="footer__socials">
+                <a href="https://github.com/dat2003as" target="_blank" rel="noopener" aria-label="GitHub"><i class="fab fa-github"></i></a>
+                <a href="https://www.linkedin.com/in/dat614943/" target="_blank" rel="noopener" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+                <a href="mailto:dat614943@gmail.com" aria-label="Email"><i class="fas fa-envelope"></i></a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scroll progress bar -->
+    <div class="scroll-progress" id="scrollProgress"></div>
+
+    <!-- Mouse glow -->
+    <div class="mouse-glow" id="mouseGlow"></div>
+
+    <!-- Back to top -->
+    <button class="back-to-top" id="backToTop" aria-label="Back to top">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <!-- Lightbox -->
+    <div class="lightbox" id="lightbox">
+        <button class="lightbox__close" aria-label="Close">&times;</button>
+        <img class="lightbox__img" id="lightboxImg" src="" alt="">
+    </div>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
